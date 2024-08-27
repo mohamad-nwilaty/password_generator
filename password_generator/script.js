@@ -32,3 +32,15 @@ function generatePassword(len){
     }
     inputBox.value = password ;
 }
+function copyPassword(){
+    let password = inputBox.value;
+    if (password !== "") {
+        navigator.clipboard.writeText(password).then(() => {
+            alert("Password copied to clipboard!");
+        }).catch(err => {
+            console.error("Could not copy text: ", err);
+        });
+    } else {
+        alert("No password to copy!");
+    }
+}

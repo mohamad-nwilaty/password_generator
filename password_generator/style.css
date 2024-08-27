@@ -26,7 +26,7 @@ body{
     max-width: 600px;
     width: 60%;
     height: 60px;
-    border-radius: 3px;
+    border-radius: 4px;
     display: block;
     padding-left: 3%;
 }
@@ -43,6 +43,31 @@ body{
     outline: 0;
     cursor: pointer;
 }
+#btn:hover{
+    background: rgb(0, 128, 15);
+    color: black;
+    transition: 0.2s;
+}
 .app input:focus {
     outline: none;
+}
+.input_copy{
+    display: flex;
+}
+#copy{
+    width: 60px ;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    background-color: white;
+    color: #002339;
+    font-size: 15px;
+    font-weight: 650;
+    cursor: pointer;
+}
+#copy:hover{
+    background-color: #002339;
+    color: white;
+    transition: 0.2s;
 }

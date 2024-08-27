@@ -7,7 +7,10 @@
     <div class="app">
         <h1>Generate a password</h1>
         <h2>with just a click</h2>
-        <input type="text"  id="box"  placeholder="Password"> 
+        <div class="input_copy">
+            <input type="text"  id="box"  placeholder="Password">
+            <button id="copy"  onclick="copyPassword()">copy</button>
+        </div>
         <button id="btn"  onclick="createPassword()">Generate</button>
     </div>
     <script src="script.js"></script>
